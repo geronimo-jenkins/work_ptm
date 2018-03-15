@@ -1,0 +1,45 @@
+header{
+    background-image: url("../image/politech.jpg");
+    background-size: cover;
+    height: 630px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.menuline{
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    height: 160px;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    padding-left: 1%;
+    margin: 0 auto;
+}
+.navbar{
+    overflow: hidden;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.name_first{
+    background-color: #5fd521;
+    border-radius: 8px;
+    width: 165px;
+    color: white;
+}
+.name_second{
+    background-color: #5fd521;
+    border-radius: 8px;
+    width: 140px;
+    color: white;
+}
+.name_third{
+    background-color: #5fd521;
+    border-radius: 8px;
+    width: 185px;
+    color: white;
+}
