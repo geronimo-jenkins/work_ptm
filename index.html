@@ -5,58 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Кафедра Прилади точної механіки</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index-layout.css">
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <div class="menuline">
         <div class="logo">
-        <img src="image/logo_PTM.jpg" alt="logo_PTM">
+        <img src="image/logo_PTM.jpg" alt="logo_PTM" >
         </div>
-        <div class="navbar">
+            <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Меню
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button"><a class="green smooth" href="#about">Про кафедру</a></button>
+                <button class="dropdown-item" type="button"><a class="blue smooth" href="#programs">Програми</a></button>
+                <button class="dropdown-item" type="button"><a class="yellow smooth" href="#publications">Публікації</a></button>
+                <button class="dropdown-item" type="button"><a class="purpure smooth" href="#research_activities">Наукова діяльність</a></button>
+                <button class="dropdown-item" type="button"><a class="red smooth" href="#collective">Колектив</a></button>
+                <button class="dropdown-item" type="button"><a class="brown smooth" href="#contacts">Контакти</a></button>
+            </div>
+            
+        <ul class="navbar">
         <nav>
-            <button><a href="#about">Про кафедру</a></button>
-
-            <button><a href="#programs">Програми</a></button>
-
-            <button><a href="#research_activities">Наукова діяльність</a></button>
-
-            <button><a href="#publications">Публікації</a></button>
             
-            <button><a href="#collective">Колектив</a></button>
+            <li><a class="brown smooth" href="#contacts">Контакти</a></li>
+            <li><a class="red smooth" href="#collective">Колектив</a></li>
+            <li><a class="yellow smooth" href="#publications">Публікації</a></li>
+            <li><a class="purpure smooth" href="#research_activities">Наукова діяльність</a></li>
+            <li><a class="blue smooth" href="#programs">Програми</a></li>
+            <li><a class="green smooth" href="#about">Про кафедру</a></li>
             
-            <button><a  href="#contacts">Контакти</a></button>
-        </nav>
         </div>
+        </nav>
+        </ul>
+        
+        
         </div>
         
         <div class="name">
-            <div class="name_first">
-            <h1>ПРИЛАДИ</h1>
-                </div>
-            <div class="name_second">
-                <h1>ТОЧНОЇ</h1>
-            </div>
-            <div class="name_third">
-                <h1>МЕХАНІКИ</h1>
-            </div>
+            <h1 class="name_first">ПРИЛАДИ</h1>
+            <h1 class="name_second">ТОЧНОЇ</h1>
+            <h1 class="name_third">МЕХАНІКИ</h1>
         </div>
+       
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="image/photo1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="image/photo2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="image/photo3.jpg" alt="Third slide">
+                </div>
+        </div>
+        
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+        <br>
+        
     </header>
     <main>
         <section id="about"> 
         <h2>ПРО КАФЕДРУ</h2>
-            <p>Кафедра приладів точної механіки створена в 1965 році, і є одною з кращих у своїй галузі. З 2002 року кафедру очолює доктор технічних наук, професор Івахів Орест Васильович.</p>
-            <p>Варто також відзначити викладацький склад кафедри який складається з докторів технічних наук, доцентів, кандидатів технічних наук, викладачів і асистентів.</p>
-            <p>Це спеціальність теперішнього і майбутнього!</p>
+            <div class="columns">
+            <div class="con1">Кафедра приладів точної механіки створена в 1965 році, і є одною з кращих у своїй галузі. З 2002 року кафедру очолює доктор технічних наук, професор Івахів Орест Васильович.</div>
+            <div class="con2">Варто також відзначити викладацький склад кафедри який складається з докторів технічних наук, доцентів, кандидатів технічних наук, викладачів і асистентів.</div>
+            </div>
+            <div class="con3">В даний час кафедра ПТМ готує фахівців із сучасних інформаційних технологій для приладобудування – інтелектуальних мехатронних систем. У поєднанні електроніки та комп’ютерного проектування з однією із найдавніших технічних наук – механікою, динамічно сформувався новий напрямок – мехатроніка. Комп’ютери чи мікропроцесори служать засобами, що забезпечують керування прецизійними механічними пристроями, маніпуляторами, промисловими роботами та приводами і наділяють їх інтелектуальними властивостями. Самі ж механічні вузли комп’ютерів та їх периферійних засобів також є об’єктами проектування, дослідження та відлагодження. Особлива увага приділяється дослідженню і застосуванню мікросистемних пристроїв (МСТ), які характеризуються малими розмірами, і останніми роками широко використовуються в транспортних засобах, системах безпеки, медицині тощо; а також відповідному CAD - програмному забезпеченню, а саме: комп’ютеризованому проектуванню, освоєнню комп’ютерної розробки технічної документації (зокрема, креслень, схем, розведення друкованих плат тощо), програмуванню мікропроцесорів та верстатів з число-програмним керуванням, володінню іноземними мовами (німецькою , англійською).</div>
         </section>
             <hr/>
         <section id="programs">
         <h2>ПРОГРАМИ НАВЧАННЯ НА КАФЕДРІ</h2>
-            <h3>Бакалавр</h3>
-            <p>«Прилади точної механіки»</p>
-                <p>Технології та інструментальні засоби:</p>
+        <div class="columns">
+            <div class="bacalavr">
+            <i class="fas fa-user"></i>
+            <div class="bacalavr_head">
+            <h3 class="speciality_name">Бакалавр</h3>
+            <p class="chair_name">«Прилади точної механіки»</p>
+            </div>
+                <div class="bacalavr_list">
+                <p class="head_list">Технології та інструментальні засоби:</p>
                     <ul>
                     <li>високорівневі мови програмування: С, С++, Pascal</li>
                     <li>низькорівневі мови програмування: Аssembler</li>
@@ -67,11 +111,18 @@
                     <li>інструментальні засоби розробки ПЗ: Місrоsoft Vіsual Studio, LabVIEW,  MatLab/Simulink, MathCad, Keil C51</li>
                     <li>системи автоматизованого проектування: SolidWorks, AutoCAD, Multisim</li>
                     </ul>
-                
-            <h3>Магістр</h3>
-            <p>«Прилади і системи точної механіки»</p>
-            <p>«Інформаційні технології в приладобудуванні»</p>
-                <p>Технології та інструментальні засоби:</p>
+                </div>
+            </div>
+            
+            <div class="magistr">  
+            <i class="fas fa-graduation-cap"></i>
+            <h3 class="speciality_name">Магістр</h3>
+            <div class="magistr_head">
+            <p class="chair_name">«Прилади і системи точної механіки»</p>
+            <p class="chair_name">«Інформаційні технології в приладобудуванні»</p>
+            </div>
+                <div class="magistr_list">
+                <p class="head_list">Технології та інструментальні засоби:</p>
                     <ul>
                     <li>високорівневі мови програмування: С, С++, Pascal</li>
                     <li>низькорівневі мови програмування: Аssembler</li>
@@ -82,46 +133,74 @@
                     <li>системи автоматизованого проектування: SolidWorks, AutoCAD, Multisim</li>
                     <li>технології розмитих множин</li>
                     </ul>
+                </div>
+            </div>
+        </div>
                 
-            <p>Кращі студенти кафедри беруть участь у всеукраїнських та регіональних олімпіадах та конкурсах, беруть активну участь в науковій роботі кафедри, студентських та міжнародних конференціях, також студенти можуть проходити практику і стажування за кордоном. Національний університет "Львівська політехніка" має широкі зовнішньоекономічні зв’язки. З багатьма іноземними фірмами підписано контракти на експорт результатів науково-технічної діяльності. Угоди про науково-технічне співробітництво укладено з вищими навчальними закладами США, Канади, Німеччини, Великобританії, Франції, Австрії, Польщі, Словаччини, Болгарії та інших країн. Цим співробітництвом передбачена участь у міжнародному обміні студентами технічних спеціальностей та стажування за кордоном викладачів і спеціалістів. Щороку наші студентів виїжджають на навчання до Європи та Америки.</p>
+            <p class="columns_footer">Кращі студенти кафедри беруть участь у всеукраїнських та регіональних олімпіадах та конкурсах, беруть активну участь в науковій роботі кафедри, студентських та міжнародних конференціях, також студенти можуть проходити практику і стажування за кордоном. Національний університет "Львівська політехніка" має широкі зовнішньоекономічні зв’язки. З багатьма іноземними фірмами підписано контракти на експорт результатів науково-технічної діяльності. Угоди про науково-технічне співробітництво укладено з вищими навчальними закладами США, Канади, Німеччини, Великобританії, Франції, Австрії, Польщі, Словаччини, Болгарії та інших країн. Цим співробітництвом передбачена участь у міжнародному обміні студентами технічних спеціальностей та стажування за кордоном викладачів і спеціалістів. Щороку наші студентів виїжджають на навчання до Європи та Америки.</p>
         </section>
             <hr/>
         <section id="research_activities">    
-        <h3>НАУКОВА ДІЯЛЬНІСТЬ</h3>
-            <hr/>
-        <h3 id="publications">ПУБЛІКАЦІЇ </h3>
-            <ul>
-            <li>Івахів Орест Васильович</li>
-            <li>Мокрицький Володимир Олексійович </li>
-            <li>Вельган Роман Богданович</li>
-            <li>Гірняк Юрій Богданович</li>
-            <li>Дейнека Ростислав Михайлович</li>
-            <li>Ключковський Сергій Миронович</li>
-            <li>Репетило Тарас Михайлович</li>
-            <li>Тихан Мирослав Олексійович</li>
-            </ul>
+        <h2>НАУКОВА ДІЯЛЬНІСТЬ</h2>
         </section>
-            <hr/>
+        <section id="publications">
+            <hr/ class="hr_margin">
+        <h2 class="publications_name">ПУБЛІКАЦІЇ </h2>
+            <div class="publications_list">
+                <p><a href="lecturers/ivachiv.html" target="_blank">Івахів Орест Васильович</a></p>
+                <p class="interests">Наукові інтереси: теорія похибок, опрацювання вимірювальних сигналів, теорія кодування, теорія масового обслуговування, нейронні мережі, інформаційна теорія вимірювань, багатоканальні засоби вимірювання, вимірювально-інформаційні системи, комплекси та мережі, мехатроніка.</p>
+                <p><a href="lecturers/mokricky.html" target="_blank">Мокрицький Володимир Олексійович</a></p>
+                <p class="interests">Наукові інтереси: проблеми метрологічного забезпечення перетворювальних пристроїв мехатроніки, в т. ч., створення зразкових засобів вимірювань електричної напруги і струму в діапазоні інфразвукових частот та засобів метрологічного забезпечення акустичних і гідроакустичних вимірювальних перетворювачів і систем.</p>
+                <p><a href="lecturers/velgan.html" target="_blank">Вельган Роман Богданович</a></p>
+                <p class="interests">Наукові інтереси: інформаційно-вимірювальна техніка: сенсори, електрична вимірювальна техніка, цифрове опрацювання сигналів, оптична метрологія: оптоелектронні пристрої, цифрове опрацювання зображень.</p>
+                <p><a href="lecturers/girnyak.html" target="_blank">Гірняк Юрій Богданович</a></p>
+                <p class="interests">Наукові інтереси: дослідження  контролерів на основі штучних нейронних мереж для мехатронних систем.</p>
+                <p><a href="lecturers/deyneka.html" target="_blank">Дейнека Ростислав Михайлович</a></p>
+                <p class="interests">Наукові інтереси: моделювання електромеханічних систем, неруйнівний контроль матеріалів.</p>
+                <p><a href="lecturers/kluchovsky.html" target="_blank">Ключковський Сергій Миронович</a></p>
+                <p class="interests">Наукові інтереси: дослідження в галузі резонансних маніпуляційних та транспортно-подавальних систем, зрівноваження циклових механізмів, енергоконстантних механізмів, обертових механізмів із змінними масами.</p>
+                <p><a href="lecturers/repetylo.html" target="_blank">Репетило Тарас Михайлович</a></p>
+                <p class="interests">Наукові інтереси: дослідження в галузі штучного інтелекту, синтез нейронних контролерів для мехатронних систем.</p>
+                <p><a href="lecturers/tychan.html" target="_blank">Тихан Мирослав Олексійович</a></p>
+                <p class="interests_last">Наукові інтереси:прилади та методи вимірювання нестаціонарних механічних величин, мехатроніка, біомеханіка.</p>
+            </div>
+        </section>
+            <hr/ class="hr_margin">
         <section id="collective">    
-        <h3 id="collective">КОЛЕКТИВ</h3>
-            <p><a href="http://wiki.lp.edu.ua/wiki/%D0%86%D0%B2%D0%B0%D1%85%D1%96%D0%B2_%D0%9E%D1%80%D0%B5%D1%81%D1%82_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BE%D0%B2%D0%B8%D1%87">Івахів Орест Васильович</a>, д.т.н., професор, звідувач кафедри</p>
-            <p><a href="http://wiki.lp.edu.ua/wiki/%D0%A2%D0%B8%D1%85%D0%B0%D0%BD_%D0%9C%D0%B8%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2_%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D1%96%D0%B9%D0%BE%D0%B2%D0%B8%D1%87">Тихан Мирослав Олексійович</a>, к.т.н., доцент кафедри</p>
-            <p><a href="http://wiki.lp.edu.ua/wiki/%D0%92%D0%B5%D0%BB%D1%8C%D0%B3%D0%B0%D0%BD_%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD_%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87">Вельган Роман Богданович</a>, к.т.н., доцент кафедри</p>
-            <p><a href="http://wiki.lp.edu.ua/wiki/%D0%94%D0%B5%D0%B9%D0%BD%D0%B5%D0%BA%D0%B0_%D0%A0%D0%BE%D1%81%D1%82%D0%B8%D1%81%D0%BB%D0%B0%D0%B2_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87">Дейнека Ростислав Михайлович</a>, к.т.н., доцент кафедри</p>
-            <p><a href="http://wiki.lp.edu.ua/wiki/%D0%9A%D0%BB%D1%8E%D1%87%D0%BA%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%A1%D0%B5%D1%80%D0%B3%D1%96%D0%B9_%D0%9C%D0%B8%D1%80%D0%BE%D0%BD%D0%BE%D0%B2%D0%B8%D1%87">Ключковський Сергій Миронович</a>, к.т.н., доцент кафедри</p>
-            <p><a href="http://wiki.lp.edu.ua/wiki/%D0%9C%D0%BE%D0%BA%D1%80%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D1%96%D0%B9%D0%BE%D0%B2%D0%B8%D1%87">Мокрицький Володимир Олексійович</a>, к.т.н., доцент кафедри</p>
-            <p><a href="http://wiki.lp.edu.ua/wiki/%D0%A0%D0%B5%D0%BF%D0%B5%D1%82%D0%B8%D0%BB%D0%BE_%D0%A2%D0%B0%D1%80%D0%B0%D1%81_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87">Репетило Тарас Михайлович</a>, к.т.н.</p>
-            <p>Гірняк Юрій Богданович, асистент</p>
+        <h2>КОЛЕКТИВ</h2>
+        <div class="main_columns">
+            
+                <div class="main_col1"><div class="col1"><img src="image/ivachiv.jpg" alt="Ivachiv" width="85" height="100"></div><div class="col2"><a href="http://wiki.lp.edu.ua/wiki/%D0%86%D0%B2%D0%B0%D1%85%D1%96%D0%B2_%D0%9E%D1%80%D0%B5%D1%81%D1%82_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BE%D0%B2%D0%B8%D1%87">Івахів Орест Васильович,<br> д.т.н., професор, звідувач кафедри</a><br></div></div>
+                <div class="main_col2"><div class="col3"><a href="http://wiki.lp.edu.ua/wiki/%D0%A2%D0%B8%D1%85%D0%B0%D0%BD_%D0%9C%D0%B8%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2_%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D1%96%D0%B9%D0%BE%D0%B2%D0%B8%D1%87">Тихан Мирослав Олексійович,<br> к.т.н., доцент кафедри</a><br></div><div class="col4"><img src="image/tychan.jpg" alt="Tychan" width="85" height="100"></div><div class="main_col2"></div></div><br>
+                <div class="main_col3"><div class="col5"><img src="image/velgan.jpg" alt="Velgan" width="85" height="100"></div><div class="col6"><a href="http://wiki.lp.edu.ua/wiki/%D0%92%D0%B5%D0%BB%D1%8C%D0%B3%D0%B0%D0%BD_%D0%A0%D0%BE%D0%BC%D0%B0%D0%BD_%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%87">Вельган Роман Богданович,<br> к.т.н., доцент кафедри</a><br></div></div>
+                <div class="main_col4"><div class="col7"><a href="http://wiki.lp.edu.ua/wiki/%D0%94%D0%B5%D0%B9%D0%BD%D0%B5%D0%BA%D0%B0_%D0%A0%D0%BE%D1%81%D1%82%D0%B8%D1%81%D0%BB%D0%B0%D0%B2_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87">Дейнека Ростислав Михайлович,<br> к.т.н., доцент кафедри</a><br></div><div class="col8"><img src="image/deyneka.jpg" alt="Deyneka" width="85" height="100"></div></div><br>
+                <div class="main_col5"><div class="col9"><img src="image/kluchkovsky.jpg" alt="Kluchkovsky" width="85" height="100"></div><div class="col10"><a href="http://wiki.lp.edu.ua/wiki/%D0%9A%D0%BB%D1%8E%D1%87%D0%BA%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%A1%D0%B5%D1%80%D0%B3%D1%96%D0%B9_%D0%9C%D0%B8%D1%80%D0%BE%D0%BD%D0%BE%D0%B2%D0%B8%D1%87">Ключковський Сергій Миронович,<br> к.т.н., доцент кафедри</a></div></div>
+                <div class="main_col6"><div class="col11"><a href="http://wiki.lp.edu.ua/wiki/%D0%9C%D0%BE%D0%BA%D1%80%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D1%96%D0%B9%D0%BE%D0%B2%D0%B8%D1%87">Мокрицький Володимир Олексійович,<br> к.т.н., доцент кафедри</a><br></div><div class="col12"><img src="image/mokricky.jpg" alt="Mokricky" width="85" height="100"></div></div><br>
+                <div class="main_col7"><div class="col13"><img src="image/repetylo.jpg" alt="Repetylo" width="85" height="100"></div><div class="col14"><a href="http://wiki.lp.edu.ua/wiki/%D0%A0%D0%B5%D0%BF%D0%B5%D1%82%D0%B8%D0%BB%D0%BE_%D0%A2%D0%B0%D1%80%D0%B0%D1%81_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87">Репетило Тарас Михайлович,<br> к.т.н.</a></div></div>
+                <div class="main_col8"><div class="col15"><a>Гірняк Юрій Богданович,<br> асистент</a></div><div class="col16"><img src="image/anonim.jpg" alt="Girnyak" width="85" height="100"></div></div><br>
+
+            </div>
+        </div>
+        </div>
         </section>
-            </hr>
+            <hr/>
         <section id="contacts">  
-        <h3 id="contacts">КОНТАКТИ</h3>
-            <p><b>Наша адреса:</b> 79013, м. Львів-13, вул. Кн. Романа 1-3, а. 117.
-                <b>Телефон:</b> (380)-(32)-258-30-41
-                <b>Факс:</b> (380)-(32)-272-92-70
-                <b>Електронна пошта:</b> ptm@lp.edu.ua
-            </p>
+        <h2>КОНТАКТИ</h2>
+            <div class="collective_txt">
+                <b>Наша адреса:</b> 79013, м. Львів-13, вул. Кн. Романа 1-3, а. 117<br>
+                <b>Телефон:</b> (380)-(32)-258-30-41<br>
+                <b>Факс:</b> (380)-(32)-272-92-70<br>
+                <b>Електронна пошта:</b> ptm@lp.edu.ua<br>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1286.613073283997!2d24.03274841167571!3d49.83820815768577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6eb41aafa3%3A0x43a1536f04107993!2z0LLRg9C70LjRhtGPINCa0L3Rj9C30Y8g0KDQvtC80LDQvdCwLCAxLCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1suk!2sua!4v1522360111209" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
         </section>
     </main>
+    <footer>
+        <p> © 2018, Кафедра ПТМ</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/smooth-scroll.js"></script>
 </body>
 </html>
