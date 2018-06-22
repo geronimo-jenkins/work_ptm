@@ -60,7 +60,7 @@ h1{
     float: right;
     padding-top: 1%;
     padding-right: 50px;
-    font-size: 1.5rem;
+    font-size: 140%;
 }
 .green.smooth{
     border-color: #5fd521;
@@ -140,7 +140,7 @@ h1{
 }
 #carouselExampleControls{
     max-height: auto;
-    width: 900px;
+    width: 700px;
     float: right;
     margin-right: 8%;
     margin-top: 8%;
@@ -202,7 +202,7 @@ h3{
 }
 .bacalavr{
     padding-left: 10%;
-    padding-right: 15%;
+    padding-right: 10%;
     float: left;
     overflow: visible;
     display: flex;
@@ -210,7 +210,7 @@ h3{
     flex-direction: column;
 }
 .magistr{
-    padding-left: 20%;
+    padding-left: 10%;
     overflow: visible;
     display: flex;
     justify-content: flex-end;
